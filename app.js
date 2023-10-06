@@ -14,6 +14,7 @@ app.set('views', 'views');
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
+//changed in query got two output from db
 db.execute('SELECT * FROM anilbd.products;')
 .then(result => {
   console.log(result[0],result[1]);
